@@ -3,10 +3,10 @@ USE ieee.std_logic_1164.all;
 
 ENTITY dff IS
 PORT(
-data_in:	IN STD_LOGIC;
-clock:		IN STD_LOGIC;
-reset:		IN STD_LOGIC;
-data_out:	OUT STD_LOGIC
+	data_in:	IN STD_LOGIC;
+	clock:		IN STD_LOGIC;
+	reset:		IN STD_LOGIC;
+	data_out:	OUT STD_LOGIC
 );
 END dff;
 

@@ -4,9 +4,9 @@ USE ieee.std_logic_signed.all;
 
 ENTITY mux4in1 IS
 PORT (
-in1, in2, in3, in4:				IN STD_LOGIC;
-sel: 						IN STD_LOGIC_VECTOR(1 downto 0);  
-output: 					OUT STD_LOGIC
+	in1, in2, in3, in4:	IN STD_LOGIC;
+	sel:			IN STD_LOGIC_VECTOR(1 downto 0);  
+	output:			OUT STD_LOGIC
 );
 END mux4in1;
 

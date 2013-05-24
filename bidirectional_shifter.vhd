@@ -4,13 +4,13 @@ USE ieee.std_logic_signed.all;
 
 ENTITY bidirectional_shifter IS
 PORT (
-  input: 			IN STD_LOGIC_VECTOR(3 downto 0);
-  clock: 			IN STD_LOGIC;
-  serial_right:			IN STD_LOGIC;
-  serial_left: 			IN STD_LOGIC;
-  sel: 				IN STD_LOGIC_VECTOR(1 downto 0);
-  reset: 			IN STD_LOGIC;
-  output: 			OUT STD_LOGIC_VECTOR(3 downto 0)
+	input:		IN STD_LOGIC_VECTOR(3 downto 0);
+	clock: 		IN STD_LOGIC;
+	serial_right:	IN STD_LOGIC;
+	serial_left: 	IN STD_LOGIC;
+	sel: 		IN STD_LOGIC_VECTOR(1 downto 0);
+	reset: 		IN STD_LOGIC;
+	output: 	OUT STD_LOGIC_VECTOR(3 downto 0)
 );
 END bidirectional_shifter;
 
@@ -18,17 +18,17 @@ ARCHITECTURE dataflow OF bidirectional_shifter IS
   
 COMPONENT mux4in1 IS
 PORT (
-	in1, in2, in3, in4: 	IN STD_LOGIC;
-	sel: 						IN STD_LOGIC_VECTOR(1 downto 0);  
-	output: 					OUT STD_LOGIC
+	in1, in2, in3, in4:	IN STD_LOGIC;
+	sel: 			IN STD_LOGIC_VECTOR(1 downto 0);  
+	output: 		OUT STD_LOGIC
 );
 END COMPONENT;
 
 COMPONENT dff IS
 PORT(	
-	data_in:		IN STD_LOGIC;
+	data_in:	IN STD_LOGIC;
 	clock:		IN STD_LOGIC;
-	reset: 		IN STD_LOGIC;
+	reset:		IN STD_LOGIC;
 	data_out:	OUT STD_LOGIC
 );
 
