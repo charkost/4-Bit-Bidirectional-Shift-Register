@@ -9,6 +9,6 @@ Functions:
 
 -Parallel Synchronous Loading
 
--Direct Overriding Clear
+-Synchronous Clear
 
 -Temporary Data Latching Capability
