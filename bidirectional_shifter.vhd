@@ -7,7 +7,7 @@ PORT (
   input: 			IN STD_LOGIC_VECTOR(3 downto 0);
   clock: 			IN STD_LOGIC;
   serial_right:			IN STD_LOGIC;
-  serial_left: 	IN STD_LOGIC;
+  serial_left: 			IN STD_LOGIC;
   sel: 				IN STD_LOGIC_VECTOR(1 downto 0);
   reset: 			IN STD_LOGIC;
   output: 			OUT STD_LOGIC_VECTOR(3 downto 0)
