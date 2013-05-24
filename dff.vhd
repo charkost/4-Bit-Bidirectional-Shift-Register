@@ -10,7 +10,7 @@ PORT(
 );
 END dff;
 
-ARCHITECTURE behv OF dff IS
+ARCHITECTURE dataflow OF dff IS
 BEGIN
 
 	PROCESS(data_in, clock)
@@ -26,4 +26,4 @@ BEGIN
 
 	END PROCESS;	
 
-END behv;
+END dataflow;
