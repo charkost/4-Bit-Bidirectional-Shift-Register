@@ -13,17 +13,17 @@ END dff;
 ARCHITECTURE behv OF dff IS
 BEGIN
 
-  PROCESS(data_in, clock)
-  BEGIN
+	PROCESS(data_in, clock)
+	BEGIN
     
-    IF (clock='1' AND clock'event) THEN
-	   IF reset='1' THEN
-	     data_out<='0';
-	   ELSE
-	     data_out <= data_in;
-	   END IF;
-    END IF;
+		IF (clock='1' AND clock'event) THEN
+			IF reset='1' THEN
+				data_out<='0';
+			ELSE
+				data_out <= data_in;
+			END IF;
+		END IF;
 
-  END PROCESS;	
+	END PROCESS;	
 
 END behv;

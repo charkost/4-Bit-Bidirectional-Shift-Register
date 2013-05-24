@@ -13,12 +13,12 @@ END mux4in1;
 ARCHITECTURE dataflow OF mux4in1 IS
 BEGIN
 
-WITH sel SELECT output <=
-  in1 when "00", 
-  in2 when "01",
-  in3 when "10",
-  in4 when "11",  
-  'X' when others;
+	WITH sel SELECT output <=
+		in1 when "00", 
+		in2 when "01",
+		in3 when "10",
+		in4 when "11",  
+		'X' when others;
 
 END dataflow;
 
