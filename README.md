@@ -12,3 +12,7 @@ Functions:
 -Synchronous Clear
 
 -Temporary Data Latching Capability
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/charkost/4-bit-bidirectional-shift-register/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
